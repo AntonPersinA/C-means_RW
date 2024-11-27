@@ -28,10 +28,11 @@ X, y_true = generate_elliptical_rings(n_points, n_rings, noise)
 # Визуализация
 plt.figure(figsize=(8, 8))
 plt.scatter(X[:, 0], X[:, 1], c=y_true, cmap='tab10', s=10)
-plt.title("Elliptical Rings Clusters")
+plt.title("Generated Elliptical Rings Clusters")
 plt.xlabel("X1")
 plt.ylabel("X2")
 plt.axis("equal")
+plt.tight_layout()
 plt.show()
 
 
